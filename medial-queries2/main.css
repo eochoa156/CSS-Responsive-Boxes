@@ -1,3 +1,50 @@
 body {
   background: papayawhip;
+  margin: 0;
 }
+
+* {
+  border: 1px solid white;
+}
+
+.container{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.a {
+  background-color: red;
+  flex-grow: 1;
+}
+
+.b {
+  background-color: blue;
+  flex-grow: 1;
+}
+
+.c {
+  background-color: green;
+  flex-grow: 1;
+}
+
+.d{
+  background-color: yellow;
+  flex-grow: 1;
+}
+
+.e{
+  background-color: pink;
+  flex-grow: 1;
+}
+
+.f {
+  background-color: purple;
+  flex-grow: 1;
+}
+
+
+@media (min-width: 600px) {
+
+  }
