@@ -1,5 +1,5 @@
 body {
-  background: peachpuff;
+  background: blanchedalmond;
   margin: 0;
 }
 
@@ -10,50 +10,57 @@ body {
 .container{
   display: flex;
   min-height: 100vh;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .a {
   background-color: red;
-  flex-grow: 1;
+  height: 20vh;
+  max-width: 100%;
+  flex-basis: 100%;
 }
-
+.b, .c, .d, .e, .f, .g {
+  height: 20vh;
+  width: 33%
+}
 .b {
   background-color: blue;
-  flex-grow: 1;
 }
 
 .c {
   background-color: green;
-  flex-grow: 1;
 }
 
-.d{
+.d {
   background-color: yellow;
-  flex-grow: 1;
 }
 
-.e{
-  background-color: pink;
-  flex-grow: 1;
+.e {
+  background-color: orange;
 }
 
 .f {
   background-color: purple;
-  flex-grow: 1;
 }
 
 .g {
-  background-color: orange;
-  flex-grow: 1;
+  background-color: cyan;
 }
 
 .h {
-  background-color: cyan;
-  flex-grow: 2;
+  background-color: pink;
+  height: 40vh;
+  max-width: 100%;
+  flex-basis: 100%;
 }
 
 @media (min-width: 600px) {
-
+  .container {
+    flex-direction: row;
+  }
+  .a {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
   }
