@@ -1,17 +1,24 @@
 body {
   background: papayawhip;
-  margin: 0;
+  margin: 1em;
 }
 
 * {
   border: 1px solid white;
 }
 
-.container{
+.container, .new{
   display: flex;
   min-height: 100vh;
+  justify-content: space-evenly;
+}
+
+.container{
   flex-direction: column;
-  justify-content: space-between;
+}
+.new{
+  flex-direction: row;
+  min-height: 10em;
 }
 
 .a {
@@ -21,12 +28,13 @@ body {
 
 .b {
   background-color: blue;
-  flex-grow: 1;
+  flex-grow: 2;
 }
 
 .c {
   background-color: green;
   flex-grow: 1;
+  
 }
 
 .d{
